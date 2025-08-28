@@ -1,0 +1,235 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+header{
+    box-sizing: border-box;
+    padding:0 20px ;
+    margin:0 ;
+    background-color: rgba(220, 222, 220, 0.6);
+    box-shadow: 0 4px 8px 4px lightgrey;
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    height:auto;
+    position: sticky;
+    top:0;
+    z-index:20;
+ 
+}
+.brand{
+    font-size: 2rem;
+    font-style: italic;
+   
+}
+.brand a{
+    text-decoration: none;
+    color:black;
+
+}
+nav ul {
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    margin:20px auto;
+    gap:30px;
+ 
+    
+}
+nav ul a{
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+    font-size: 1.1rem;
+    
+}
+nav ul a:hover{
+    background-color:chartreuse;
+    color:black;
+    padding:4px;
+    border-radius: 9px;
+    transition: all 0.3s ease-out;
+}
+#hero {
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    
+}
+
+
+#hero h1 {
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+
+}
+#hero p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-bottom: 2px solid black;
+    padding-bottom:20px;
+    
+}
+#hero img{
+    
+    height:auto;
+    width:80%;
+    max-width:600px;
+    filter:contrast(120%) brightness(110%);
+    
+    
+}
+#specifications{
+    margin:100px auto 50px ;
+    width:92%;
+    background-color: white;
+    padding:15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 4px lightgrey;   
+}
+#specifications h3{
+    font-size: 1.3rem;
+    letter-spacing: 0.3px;
+}
+#specifications ul{
+    list-style: square ;
+    line-height: 25px;
+}
+.divider{
+    border-bottom: 2px solid black;
+    margin-top: 20px;
+    
+}
+.price{
+    width:250px;
+    margin-bottom: 30px;
+    height:auto;
+    background-color: rgba(220, 222, 220, 0.25);
+    box-shadow: 3px 3px 4px 6px lightgrey;
+    border-radius: 9px;
+}
+.divide{
+    border-bottom: 3px solid lightgrey;
+}
+#pricing{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+#pricing div:not(.divide){
+    padding:15px;
+}
+.cart{
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 0.4px;
+}
+.align{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.left{
+    font-weight: 650;
+    
+}
+.value{
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.6px;
+}
+.mi{
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.6px;
+}
+.gallery{
+    margin-bottom: 60px;
+}
+.gallery figure{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width:300px;;
+    height:400px;
+    filter:contrast(120%) brightness(110%);
+    border-radius: 24px;
+}
+figure figcaption{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.first img,.second img , .third img{
+    width: 300px;
+    height: auto;
+
+}
+.first,.second,.third{
+    box-sizing: border-box;
+    width: 350px;
+    height: 450px;
+    font-weight: 700;
+    margin-bottom: 20px;;
+    text-align: center;
+    background-color: beige;
+    border-radius: 15px;
+    padding: 2px;
+}
+.first a,.second a,.third a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding:5px 8px;
+    border-radius:6px ;
+    font-size: 1.2rem;
+    
+}
+.first > p,.second > p , .third >p{
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+.title{
+    font-size: 1.4rem;
+    text-indent: 10px;
+}
+#more{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.first a:hover,.second a:hover,.third a:hover{
+    color:aqua ;
+    
+}
+#contact-us{
+    margin-top: 70px;
+    background-color: black;
+    color:white;
+    padding:30px;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+#contact-us a{
+    text-decoration: none;
+    color: chartreuse;
+}
+#contact-us a:hover{
+    color:rgb(60, 168, 207);
+}
