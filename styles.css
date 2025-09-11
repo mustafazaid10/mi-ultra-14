@@ -161,7 +161,7 @@ nav ul a:hover{
     flex-wrap: wrap;
 }
 .gallery img{
-    width:300px;;
+    width:300px;
     height:400px;
     filter:contrast(120%) brightness(110%);
     border-radius: 24px;
@@ -232,4 +232,11 @@ figure figcaption{
 }
 #contact-us a:hover{
     color:rgb(60, 168, 207);
+}
+@media (max-width:500px) {
+  nav ul {
+    display:none;
+  }
+  
+  
 }
