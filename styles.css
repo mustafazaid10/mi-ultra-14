@@ -12,8 +12,9 @@ header{
     margin:0 ;
     background-color: rgba(220, 222, 220, 0.6);
     box-shadow: 0 4px 8px 4px lightgrey;
-    display:flex;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns: 200px 4fr 1fr;
+    place-items: center;
     width:100%;
     height:auto;
     position: sticky;
@@ -51,11 +52,45 @@ nav ul a{
     
 }
 nav ul a:hover{
-    background-color:chartreuse;
+    background-color:lightgray;
     color:black;
-    padding:4px;
+    padding: 7px 10px;
     border-radius: 9px;
-    transition: all 0.3s ease-out;
+    transition: all 0.25s ease;
+}
+.btn{
+    width:100%;
+    height:auto;
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+}
+.same{
+    width:100%;
+    display:flex;
+    gap:5px;
+    font-size:1.1rem;
+    font-weight: 500;
+    text-decoration:none;
+    padding: 6px 10px;
+    border-radius: 9px;
+}
+.btn1{
+    color:whitesmoke;
+    background-color:black;
+}
+.btn1:hover{
+    color:aqua;
+    
+}
+.btn2{
+    color:black;
+    background-color:whitesmoke;
+    
+    
+}
+.btn2:hover{
+    color:aqua;
 }
 #hero {
     padding: 10px;
@@ -233,10 +268,26 @@ figure figcaption{
 #contact-us a:hover{
     color:rgb(60, 168, 207);
 }
-@media (max-width:500px) {
+
+@media (max-width:800px) {
   nav ul {
     display:none;
-  }
-  
-  
+  }  
+}
+@media (max-width:1000px) {
+  .contact {
+    display:none;
+  }  
+  header{
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+}
+@media (min-width:1000px){
+    header{
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+    .same{
+        padding: 10px 20px;
+    }
+    
 }
